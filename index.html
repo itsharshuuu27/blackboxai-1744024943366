@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEAM Leadership Initiative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .fade-in {
+            animation: fadeIn 1.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only fixed top-2 left-2 bg-indigo-800 text-white px-4 py-2 rounded z-50">Skip to content</a>
+    
+    <nav class="bg-white shadow-lg sticky top-0 z-40" aria-label="Main navigation">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                <div class="text-2xl font-bold text-indigo-800">LUNEXA</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#programs" class="text-gray-700 hover:text-blue-600">Programs</a>
+                    <a href="#join" class="text-gray-700 hover:text-blue-600">Join</a>
+                    <a href="#resources" class="text-gray-700 hover:text-blue-600">Resources</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <i class="fas fa-bars text-gray-700 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-white fade-in" aria-labelledby="hero-heading">
+        <div class="text-center px-4">
+            <h1 id="hero-heading" class="text-4xl md:text-6xl font-bold mb-6">LUNEXA: Where Creativity Meets Innovation</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Empowering students through nonprofit STEAM education initiatives</p>
+            <div class="space-x-4" role="group" aria-label="Call to action">
+                <a href="#join" class="bg-indigo-800 hover:bg-indigo-900 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-block">Start a Chapter</a>
+                <a href="#donate" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-block">Donate Now</a>
+                <a href="#volunteer" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-block">Volunteer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nonprofit Status Banner -->
+    <div class="bg-indigo-900 text-white text-center py-2 px-4">
+        <p class="text-sm md:text-base">LUNEXA is a 501(c)(3) nonprofit organization. All donations are tax-deductible. <a href="#financials" class="underline font-semibold">View our financials</a></p>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white" aria-labelledby="about-heading">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">About LUNEXA</h2>
+            <p class="text-xl text-center mb-16 max-w-4xl mx-auto">A pioneering initiative that empowers students across all ages to unlock their creative and entrepreneurial potential through hands-on workshops and engaging community activities.</p>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-indigo-800">Our Mission</h3>
+                    <p class="text-lg mb-6">To build a legacy of future leaders by nurturing innovation, design thinking, and entrepreneurship in youth.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 text-indigo-800">Our Impact</h3>
+                    <p class="mb-6">From elementary to high school students, LUNEXA has already ignited the spark of leadership and innovation in hundreds of minds through engaging and inclusive workshops.</p>
+                    
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-indigo-800">500+</div>
+                            <div class="text-sm">Students Engaged</div>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-indigo-800">25+</div>
+                            <div class="text-sm">Schools Participating</div>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-indigo-800">4</div>
+                            <div class="text-sm">Program Areas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-indigo-50 rounded-lg p-8">
+                    <img src="https://images.pexels.com/photos/5905441/pexels-photo-5905441.jpeg" alt="Students collaborating" class="rounded-lg shadow-md w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What We Offer</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-paint-brush text-indigo-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Design Labs</h3>
+                    <p class="mb-4 text-center">Creative sessions focusing on business branding, logo creation, storytelling, and color psychology.</p>
+                    <a href="#" class="text-indigo-800 font-semibold hover:underline block text-center">Explore →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-bolt text-indigo-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Innovation Sprints</h3>
+                    <p class="mb-4 text-center">Fast-paced, real-world problem-solving activities rooted in law, business, and technology.</p>
+                    <a href="#" class="text-indigo-800 font-semibold hover:underline block text-center">Explore →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-bullhorn text-indigo-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Pitch & Present</h3>
+                    <p class="mb-4 text-center">Workshops on effective presentation, confidence building, and public speaking.</p>
+                    <a href="#" class="text-indigo-800 font-semibold hover:underline block text-center">Explore →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-atom text-indigo-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">STEAM Zones</h3>
+                    <p class="mb-4 text-center">Blending arts with science, tech, and engineering to power ideas from imagination to execution.</p>
+                    <a href="#" class="text-indigo-800 font-semibold hover:underline block text-center">Explore →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="py-20 bg-blue-600 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Join Our Movement</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Start a Chapter at Your School</h3>
+                    <p class="mb-6">We provide all the resources and training needed to launch a successful chapter. Whether you're a student leader or school administrator, we'll guide you through the process.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-300 mt-1 mr-2"></i>
+                            <span>Comprehensive curriculum materials</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-300 mt-1 mr-2"></i>
+                            <span>Teacher/advisor training</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-300 mt-1 mr-2"></i>
+                            <span>Ongoing support from our team</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-block">Get Started</a>
+                </div>
+                <div class="bg-white bg-opacity-10 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-6">Find a Chapter Near You</h3>
+                    <div class="bg-white rounded-lg p-4 text-gray-800">
+                        <img src="https://maps.googleapis.com/maps/api/staticmap?center=United+States&zoom=4&size=600x300&maptype=roadmap&key=YOUR_API_KEY" alt="Chapter Locations" class="w-full h-auto rounded">
+                        <p class="mt-4 text-center">We have chapters in 25 states and growing!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Resources & Blog</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm card-hover transition duration-300">
+                    <img src="https://images.pexels.com/photos/5905441/pexels-photo-5905441.jpeg" alt="Student working" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600 font-semibold">STEAM Education</span>
+                        <h3 class="text-xl font-bold my-2">5 Hands-on Science Projects for Middle School</h3>
+                        <p class="text-gray-600 mb-4">Engage students with these innovative experiments that teach core concepts.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">Read more →</a>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm card-hover transition duration-300">
+                    <img src="https://images.pexels.com/photos/7376/startup-photos.jpg" alt="Business meeting" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-green-500 font-semibold">Entrepreneurship</span>
+                        <h3 class="text-xl font-bold my-2">Teaching Business Basics to High School Students</h3>
+                        <p class="text-gray-600 mb-4">Essential concepts every young entrepreneur should know.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">Read more →</a>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm card-hover transition duration-300">
+                    <img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg" alt="Debate team" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-purple-600 font-semibold">Law & Debate</span>
+                        <h3 class="text-xl font-bold my-2">How to Structure a Mock Trial for Beginners</h3>
+                        <p class="text-gray-600 mb-4">Step-by-step guide to setting up your first mock trial.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">Read more →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">View All Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Our Leadership</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-48 h-48 rounded-full mx-auto mb-4 bg-indigo-100 flex items-center justify-center leader-image">
+                        <span class="text-4xl font-bold text-indigo-800">H</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Harshaa</h3>
+                    <p class="text-indigo-800 mb-2">Chief Executive Officer</p>
+                    <p class="text-gray-600">Strategic visionary driving LUNEXA's mission forward</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-48 h-48 rounded-full mx-auto mb-4 bg-indigo-100 flex items-center justify-center leader-image">
+                        <span class="text-4xl font-bold text-indigo-800">B</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Bavishya</h3>
+                    <p class="text-indigo-800 mb-2">Chief Operating Officer</p>
+                    <p class="text-gray-600">Operations expert ensuring program excellence</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-48 h-48 rounded-full mx-auto mb-4 bg-indigo-100 flex items-center justify-center leader-image">
+                        <span class="text-4xl font-bold text-indigo-800">K</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Kheerthan</h3>
+                    <p class="text-indigo-800 mb-2">Chief Technology Officer</p>
+                    <p class="text-gray-600">Tech innovator building digital learning platforms</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-48 h-48 rounded-full mx-auto mb-4 bg-indigo-100 flex items-center justify-center leader-image">
+                        <span class="text-4xl font-bold text-indigo-800">S</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Seshank</h3>
+                    <p class="text-indigo-800 mb-2">Chief Financial Officer</p>
+                    <p class="text-gray-600">Financial steward ensuring sustainable growth</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-48 h-48 rounded-full mx-auto mb-4 bg-indigo-100 flex items-center justify-center leader-image">
+                        <span class="text-4xl font-bold text-indigo-800">V</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Vikrant</h3>
+                    <p class="text-indigo-800 mb-2">Chief Marketing Officer</p>
+                    <p class="text-gray-600">Brand builder expanding our reach and impact</p>
+                </div>
+                <div class="text-center col-span-full mt-8">
+                    <p class="text-gray-600">Based in Leander, Texas - serving students nationwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-indigo-100 to-purple-100 opacity-20"></div>
+        <div class="relative max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Get In Touch</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Contact Our Team</h3>
+                    <p class="mb-6">Have questions about starting a chapter, partnering with us, or accessing resources? We'd love to hear from you!</p>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                                <option value="">Select a topic</option>
+                                <option value="chapter">Starting a Chapter</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="resources">Resource Questions</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">Send Message</button>
+                    </form>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Connect With Us</h3>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-envelope text-blue-600 text-2xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p>info@steamleaders.org</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-phone-alt text-blue-600 text-2xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-2xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Headquarters</h4>
+                                <p>123 Education Way, Suite 100<br>Boston, MA 02115</p>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-blue-400 hover:text-blue-600 text-2xl"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-pink-600 hover:text-pink-800 text-2xl"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-blue-700 hover:text-blue-900 text-2xl"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">STEAM Leaders</h3>
+                    <p class="mb-4">Empowering the next generation of innovators and leaders through education.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="#programs" class="text-gray-300 hover:text-white">Programs</a></li>
+                        <li><a href="#resources" class="text-gray-300 hover:text-white">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Programs</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">STEAM Chapters</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Law & Debate</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Business & Entrepreneurship</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Events Calendar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="mb-4 text-gray-300">Subscribe to get updates on new programs and resources.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 LUNEXA. All rights reserved.</p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.md\\:flex').classList.toggle('hidden');
+        });
+
+        // Form validation
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !message) {
+                e.preventDefault();
+                alert('Please fill in all required fields.');
+            }
+        });
+
+        // Scroll animations
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.card-hover');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
